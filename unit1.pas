@@ -5,8 +5,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, DateTimePicker, Forms, Controls, Graphics,
-  Dialogs, StdCtrls, ExtCtrls, ComCtrls,DateUtils;
+  Classes, SysUtils, FileUtil, DateTimePicker, Forms, Controls,
+  Graphics, Dialogs, StdCtrls, ExtCtrls, ComCtrls, ActnList, DateUtils;
 
 type
 
@@ -81,6 +81,8 @@ type
      procedure dateClick2(Sender: TObject);
      procedure dataodclick1(Sender: TObject);
 
+
+
   private
     { private declarations }
   public
@@ -112,7 +114,7 @@ begin
 
 
 
-   dieta:=StrToFloat(edit9.text);
+ dieta:=StrToFloat(edit9.text);
  datakursu1:=FormatDateTime('yyyymmdd',datakursu.date);
 
 
@@ -142,6 +144,261 @@ procedure TForm1.dateclick1(Sender: TObject);
 begin
 
  datakursu1:=FormatDateTime('yyyymmdd',datakursu.date);
+
+ //rok 2017
+
+ if datakursu1='20170102' then edit1.text:='4,4157' else
+ if datakursu1='20170103' then edit1.text:='4,4002' else
+ if datakursu1='20170104' then edit1.text:='4,3877' else
+ if datakursu1='20170105' then edit1.text:='4,3766' else
+ if datakursu1='20170109' then edit1.text:='4,3783' else
+ if datakursu1='20170110' then edit1.text:='4,3735' else
+ if datakursu1='20170111' then edit1.text:='4,3684' else
+ if datakursu1='20170112' then edit1.text:='4,3728' else
+ if datakursu1='20170113' then edit1.text:='4,373' else
+ if datakursu1='20170116' then edit1.text:='4,3792' else
+ if datakursu1='20170117' then edit1.text:='4,3771' else
+ if datakursu1='20170118' then edit1.text:='4,3705' else
+ if datakursu1='20170119' then edit1.text:='4,3741' else
+ if datakursu1='20170120' then edit1.text:='4,3658' else
+ if datakursu1='20170123' then edit1.text:='4,3725' else
+ if datakursu1='20170124' then edit1.text:='4,372' else
+ if datakursu1='20170125' then edit1.text:='4,3636' else
+ if datakursu1='20170126' then edit1.text:='4,352' else
+ if datakursu1='20170127' then edit1.text:='4,3413' else
+ if datakursu1='20170130' then edit1.text:='4,3291' else
+ if datakursu1='20170131' then edit1.text:='4,3308' else
+ if datakursu1='20170201' then edit1.text:='4,3221' else
+ if datakursu1='20170202' then edit1.text:='4,3084' else
+ if datakursu1='20170203' then edit1.text:='4,2985' else
+ if datakursu1='20170206' then edit1.text:='4,2864' else
+ if datakursu1='20170207' then edit1.text:='4,2943' else
+ if datakursu1='20170208' then edit1.text:='4,3128' else
+ if datakursu1='20170209' then edit1.text:='4,3162' else
+ if datakursu1='20170210' then edit1.text:='4,303' else
+ if datakursu1='20170213' then edit1.text:='4,3077' else
+ if datakursu1='20170214' then edit1.text:='4,3025' else
+ if datakursu1='20170215' then edit1.text:='4,3025' else
+ if datakursu1='20170216' then edit1.text:='4,316' else
+ if datakursu1='20170217' then edit1.text:='4,3314' else
+ if datakursu1='20170220' then edit1.text:='4,3227' else
+ if datakursu1='20170221' then edit1.text:='4,3163' else
+ if datakursu1='20170222' then edit1.text:='4,2977' else
+ if datakursu1='20170223' then edit1.text:='4,3076' else
+ if datakursu1='20170224' then edit1.text:='4,3102' else
+ if datakursu1='20170227' then edit1.text:='4,3135' else
+ if datakursu1='20170228' then edit1.text:='4,3166' else
+ if datakursu1='20170301' then edit1.text:='4,297' else
+ if datakursu1='20170302' then edit1.text:='4,2912' else
+ if datakursu1='20170303' then edit1.text:='4,3078' else
+ if datakursu1='20170306' then edit1.text:='4,31' else
+ if datakursu1='20170307' then edit1.text:='4,3115' else
+ if datakursu1='20170308' then edit1.text:='4,3087' else
+ if datakursu1='20170309' then edit1.text:='4,3146' else
+ if datakursu1='20170310' then edit1.text:='4,326' else
+ if datakursu1='20170313' then edit1.text:='4,346' else
+ if datakursu1='20170314' then edit1.text:='4,3295' else
+ if datakursu1='20170315' then edit1.text:='4,3208' else
+ if datakursu1='20170316' then edit1.text:='4,3165' else
+ if datakursu1='20170317' then edit1.text:='4,3013' else
+ if datakursu1='20170320' then edit1.text:='4,2821' else
+ if datakursu1='20170321' then edit1.text:='4,2635' else
+ if datakursu1='20170322' then edit1.text:='4,2855' else
+ if datakursu1='20170323' then edit1.text:='4,275' else
+ if datakursu1='20170324' then edit1.text:='4,2658' else
+ if datakursu1='20170327' then edit1.text:='4,263' else
+ if datakursu1='20170328' then edit1.text:='4,2529' else
+ if datakursu1='20170329' then edit1.text:='4,236' else
+ if datakursu1='20170330' then edit1.text:='4,2292' else
+ if datakursu1='20170331' then edit1.text:='4,2198' else
+ if datakursu1='20170403' then edit1.text:='4,2327' else
+ if datakursu1='20170404' then edit1.text:='4,2525' else
+ if datakursu1='20170405' then edit1.text:='4,2464' else
+ if datakursu1='20170406' then edit1.text:='4,2412' else
+ if datakursu1='20170407' then edit1.text:='4,2273' else
+ if datakursu1='20170410' then edit1.text:='4,2301' else
+ if datakursu1='20170411' then edit1.text:='4,2415' else
+ if datakursu1='20170412' then edit1.text:='4,2505' else
+ if datakursu1='20170413' then edit1.text:='4,245' else
+ if datakursu1='20170414' then edit1.text:='4,2395' else
+ if datakursu1='20170418' then edit1.text:='4,2401' else
+ if datakursu1='20170419' then edit1.text:='4,2404' else
+ if datakursu1='20170420' then edit1.text:='4,2631' else
+ if datakursu1='20170421' then edit1.text:='4,2705' else
+ if datakursu1='20170424' then edit1.text:='4,241' else
+ if datakursu1='20170425' then edit1.text:='4,2346' else
+ if datakursu1='20170426' then edit1.text:='4,2255' else
+ if datakursu1='20170427' then edit1.text:='4,2296' else
+ if datakursu1='20170428' then edit1.text:='4,217' else
+ if datakursu1='20170502' then edit1.text:='4,2226' else
+ if datakursu1='20170504' then edit1.text:='4,2177' else
+ if datakursu1='20170505' then edit1.text:='4,2176' else
+ if datakursu1='20170508' then edit1.text:='4,2059' else
+ if datakursu1='20170509' then edit1.text:='4,2253' else
+ if datakursu1='20170510' then edit1.text:='4,2155' else
+ if datakursu1='20170511' then edit1.text:='4,215' else
+ if datakursu1='20170512' then edit1.text:='4,22' else
+ if datakursu1='20170515' then edit1.text:='4,2096' else
+ if datakursu1='20170516' then edit1.text:='4,1902' else
+ if datakursu1='20170517' then edit1.text:='4,1912' else
+ if datakursu1='20170518' then edit1.text:='4,22' else
+ if datakursu1='20170519' then edit1.text:='4,2069' else
+ if datakursu1='20170522' then edit1.text:='4,1907' else
+ if datakursu1='20170523' then edit1.text:='4,2018' else
+ if datakursu1='20170524' then edit1.text:='4,1985' else
+ if datakursu1='20170525' then edit1.text:='4,1796' else
+ if datakursu1='20170526' then edit1.text:='4,1803' else
+ if datakursu1='20170529' then edit1.text:='4,1794' else
+ if datakursu1='20170530' then edit1.text:='4,1739' else
+ if datakursu1='20170531' then edit1.text:='4,1737' else
+ if datakursu1='20170601' then edit1.text:='4,1834' else
+ if datakursu1='20170602' then edit1.text:='4,1882' else
+ if datakursu1='20170605' then edit1.text:='4,1781' else
+ if datakursu1='20170606' then edit1.text:='4,1916' else
+ if datakursu1='20170607' then edit1.text:='4,1943' else
+ if datakursu1='20170608' then edit1.text:='4,2071' else
+ if datakursu1='20170609' then edit1.text:='4,1877' else
+ if datakursu1='20170612' then edit1.text:='4,1927' else
+ if datakursu1='20170613' then edit1.text:='4,1921' else
+ if datakursu1='20170614' then edit1.text:='4,2025' else
+ if datakursu1='20170616' then edit1.text:='4,2181' else
+ if datakursu1='20170619' then edit1.text:='4,2112' else
+ if datakursu1='20170620' then edit1.text:='4,2248' else
+ if datakursu1='20170621' then edit1.text:='4,2442' else
+ if datakursu1='20170622' then edit1.text:='4,2442' else
+ if datakursu1='20170623' then edit1.text:='4,2255' else
+ if datakursu1='20170626' then edit1.text:='4,2117' else
+ if datakursu1='20170627' then edit1.text:='4,212' else
+ if datakursu1='20170628' then edit1.text:='4,2317' else
+ if datakursu1='20170629' then edit1.text:='4,2412' else
+ if datakursu1='20170630' then edit1.text:='4,2265' else
+ if datakursu1='20170703' then edit1.text:='4,2331' else
+ if datakursu1='20170704' then edit1.text:='4,2428' else
+ if datakursu1='20170705' then edit1.text:='4,2501' else
+ if datakursu1='20170706' then edit1.text:='4,2388' else
+ if datakursu1='20170707' then edit1.text:='4,2337' else
+ if datakursu1='20170710' then edit1.text:='4,2348' else
+ if datakursu1='20170711' then edit1.text:='4,2435' else
+ if datakursu1='20170712' then edit1.text:='4,2432' else
+ if datakursu1='20170713' then edit1.text:='4,2345' else
+ if datakursu1='20170714' then edit1.text:='4,2194' else
+ if datakursu1='20170717' then edit1.text:='4,2091' else
+ if datakursu1='20170718' then edit1.text:='4,2032' else
+ if datakursu1='20170719' then edit1.text:='4,2057' else
+ if datakursu1='20170720' then edit1.text:='4,2117' else
+ if datakursu1='20170721' then edit1.text:='4,2311' else
+ if datakursu1='20170724' then edit1.text:='4,2413' else
+ if datakursu1='20170725' then edit1.text:='4,2559' else
+ if datakursu1='20170726' then edit1.text:='4,2611' else
+ if datakursu1='20170727' then edit1.text:='4,265' else
+ if datakursu1='20170728' then edit1.text:='4,2617' else
+ if datakursu1='20170731' then edit1.text:='4,2545' else
+ if datakursu1='20170801' then edit1.text:='4,2548' else
+ if datakursu1='20170802' then edit1.text:='4,2515' else
+ if datakursu1='20170803' then edit1.text:='4,2538' else
+ if datakursu1='20170804' then edit1.text:='4,2423' else
+ if datakursu1='20170807' then edit1.text:='4,2469' else
+ if datakursu1='20170808' then edit1.text:='4,2541' else
+ if datakursu1='20170809' then edit1.text:='4,2638' else
+ if datakursu1='20170810' then edit1.text:='4,2709' else
+ if datakursu1='20170811' then edit1.text:='4,2851' else
+ if datakursu1='20170814' then edit1.text:='4,2823' else
+ if datakursu1='20170816' then edit1.text:='4,2724' else
+ if datakursu1='20170817' then edit1.text:='4,2541' else
+ if datakursu1='20170818' then edit1.text:='4,2826' else
+ if datakursu1='20170821' then edit1.text:='4,2747' else
+ if datakursu1='20170822' then edit1.text:='4,2772' else
+ if datakursu1='20170823' then edit1.text:='4,2767' else
+ if datakursu1='20170824' then edit1.text:='4,2827' else
+ if datakursu1='20170825' then edit1.text:='4,26' else
+ if datakursu1='20170828' then edit1.text:='4,264' else
+ if datakursu1='20170829' then edit1.text:='4,2661' else
+ if datakursu1='20170830' then edit1.text:='4,261' else
+ if datakursu1='20170831' then edit1.text:='4,2618' else
+ if datakursu1='20170901' then edit1.text:='4,2457' else
+ if datakursu1='20170904' then edit1.text:='4,257' else
+ if datakursu1='20170905' then edit1.text:='4,2361' else
+ if datakursu1='20170906' then edit1.text:='4,2446' else
+ if datakursu1='20170907' then edit1.text:='4,2466' else
+ if datakursu1='20170908' then edit1.text:='4,2511' else
+ if datakursu1='20170911' then edit1.text:='4,2426' else
+ if datakursu1='20170912' then edit1.text:='4,2511' else
+ if datakursu1='20170913' then edit1.text:='4,2677' else
+ if datakursu1='20170914' then edit1.text:='4,2837' else
+ if datakursu1='20170915' then edit1.text:='4,2781' else
+ if datakursu1='20170918' then edit1.text:='4,2835' else
+ if datakursu1='20170919' then edit1.text:='4,293' else
+ if datakursu1='20170920' then edit1.text:='4,2769' else
+ if datakursu1='20170921' then edit1.text:='4,2863' else
+ if datakursu1='20170922' then edit1.text:='4,2746' else
+ if datakursu1='20170925' then edit1.text:='4,2698' else
+ if datakursu1='20170926' then edit1.text:='4,282' else
+ if datakursu1='20170927' then edit1.text:='4,3012' else
+ if datakursu1='20170928' then edit1.text:='4,3166' else
+ if datakursu1='20170929' then edit1.text:='4,3091' else
+ if datakursu1='20171002' then edit1.text:='4,3137' else
+ if datakursu1='20171003' then edit1.text:='4,3105' else
+ if datakursu1='20171004' then edit1.text:='4,3025' else
+ if datakursu1='20171005' then edit1.text:='4,2985' else
+ if datakursu1='20171006' then edit1.text:='4,3042' else
+ if datakursu1='20171009' then edit1.text:='4,3121' else
+ if datakursu1='20171010' then edit1.text:='4,2952' else
+ if datakursu1='20171011' then edit1.text:='4,2836' else
+ if datakursu1='20171012' then edit1.text:='4,2705' else
+ if datakursu1='20171013' then edit1.text:='4,2603' else
+ if datakursu1='20171016' then edit1.text:='4,2449' else
+ if datakursu1='20171017' then edit1.text:='4,2313' else
+ if datakursu1='20171018' then edit1.text:='4,2293' else
+ if datakursu1='20171019' then edit1.text:='4,2381' else
+ if datakursu1='20171020' then edit1.text:='4,2452' else
+ if datakursu1='20171023' then edit1.text:='4,2359' else
+ if datakursu1='20171024' then edit1.text:='4,2382' else
+ if datakursu1='20171025' then edit1.text:='4,237' else
+ if datakursu1='20171026' then edit1.text:='4,2458' else
+ if datakursu1='20171027' then edit1.text:='4,252' else
+ if datakursu1='20171030' then edit1.text:='4,2403' else
+ if datakursu1='20171031' then edit1.text:='4,2498' else
+ if datakursu1='20171102' then edit1.text:='4,2336' else
+ if datakursu1='20171103' then edit1.text:='4,2406' else
+ if datakursu1='20171106' then edit1.text:='4,2449' else
+ if datakursu1='20171107' then edit1.text:='4,2397' else
+ if datakursu1='20171108' then edit1.text:='4,2423' else
+ if datakursu1='20171109' then edit1.text:='4,2308' else
+ if datakursu1='20171110' then edit1.text:='4,2299' else
+ if datakursu1='20171113' then edit1.text:='4,2352' else
+ if datakursu1='20171114' then edit1.text:='4,2332' else
+ if datakursu1='20171115' then edit1.text:='4,2487' else
+ if datakursu1='20171116' then edit1.text:='4,2346' else
+ if datakursu1='20171117' then edit1.text:='4,2419' else
+ if datakursu1='20171120' then edit1.text:='4,2351' else
+ if datakursu1='20171121' then edit1.text:='4,2296' else
+ if datakursu1='20171122' then edit1.text:='4,2183' else
+ if datakursu1='20171123' then edit1.text:='4,2108' else
+ if datakursu1='20171124' then edit1.text:='4,2116' else
+ if datakursu1='20171127' then edit1.text:='4,2086' else
+ if datakursu1='20171128' then edit1.text:='4,2074' else
+ if datakursu1='20171129' then edit1.text:='4,1991' else
+ if datakursu1='20171130' then edit1.text:='4,2055' else
+ if datakursu1='20171201' then edit1.text:='4,2078' else
+ if datakursu1='20171204' then edit1.text:='4,2082' else
+ if datakursu1='20171205' then edit1.text:='4,2024' else
+ if datakursu1='20171206' then edit1.text:='4,2154' else
+ if datakursu1='20171207' then edit1.text:='4,2115' else
+ if datakursu1='20171208' then edit1.text:='4,2026' else
+ if datakursu1='20171211' then edit1.text:='4,2038' else
+ if datakursu1='20171212' then edit1.text:='4,2077' else
+ if datakursu1='20171213' then edit1.text:='4,2155' else
+ if datakursu1='20171214' then edit1.text:='4,2216' else
+ if datakursu1='20171215' then edit1.text:='4,2217' else
+ if datakursu1='20171218' then edit1.text:='4,2134' else
+ if datakursu1='20171219' then edit1.text:='4,2011' else
+ if datakursu1='20171220' then edit1.text:='4,1975' else
+ if datakursu1='20171221' then edit1.text:='4,2018' else
+ if datakursu1='20171222' then edit1.text:='4,1935' else
+ if datakursu1='20171227' then edit1.text:='4,1909' else
+ if datakursu1='20171228' then edit1.text:='4,1815' else
+ if datakursu1='20171229' then edit1.text:='4,1709' else
+
  //rok 2016
 if datakursu1='20160104' then edit1.text:='4,2935' else
 if datakursu1='20160105' then edit1.text:='4,3176' else
@@ -1416,10 +1673,11 @@ if datakursu1='20121227' then edit1.text:='4,0899' else
 if datakursu1='20121228' then edit1.text:='4,0745' else
 if datakursu1='20121231' then edit1.text:='4,0882' else
 
-     begin
+    begin
         edit1.text:='0';
        showmessage('Brak kursu z podanego dnia');
-     end;
+    end;
+
 
 
 
@@ -1446,10 +1704,7 @@ end;
    d1:=dataod.date;
    d2:=datado.date;
    d3:=EncodeDate(2013, 03, 01);
-
-
-
-      edit2.text:=IntToStr(DaysBetween(d2, d1)+1);
+   edit2.text:=IntToStr(DaysBetween(d2, d1)+1);
 
   if d2<d3 then
         begin
@@ -1486,12 +1741,6 @@ francja 45
 }
 
   end;
-
-
-
-
-
-
 
 
  procedure TForm1.Button2Click(Sender: TObject);

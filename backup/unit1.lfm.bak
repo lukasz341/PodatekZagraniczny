@@ -1,12 +1,13 @@
 object Form1: TForm1
-  Left = 259
-  Height = 639
-  Top = 14
+  Left = 303
+  Height = 642
+  Top = 28
   Width = 863
-  Caption = 'Podatek zagraniczny  | autor: Łukasz Kaleta'
-  ClientHeight = 639
+  Align = alTop
+  Caption = 'Podatek zagraniczny 2017 | autor: Łukasz Kaleta'
+  ClientHeight = 642
   ClientWidth = 863
-  LCLVersion = '1.6.2.0'
+  LCLVersion = '1.8.0.6'
   object Button1: TButton
     Left = 187
     Height = 25
@@ -40,7 +41,7 @@ object Form1: TForm1
     Top = 152
     Width = 149
     TabOrder = 2
-    Text = '4,2935'
+    Text = '0'
   end
   object Label1: TLabel
     Left = 48
@@ -186,7 +187,7 @@ object Form1: TForm1
     TimeFormat = tf24
     TimeDisplay = tdHMS
     DateMode = dmComboBox
-    Date = 42373
+    Date = 42736
     Time = 0.939742534719699
     UseDefaultSeparators = True
     HideDateTimeParts = []
@@ -226,7 +227,7 @@ object Form1: TForm1
     TimeFormat = tf24
     TimeDisplay = tdHMS
     DateMode = dmComboBox
-    Date = 42373
+    Date = 42736
     Time = 0.939742534719699
     UseDefaultSeparators = True
     HideDateTimeParts = []
@@ -250,7 +251,7 @@ object Form1: TForm1
     TimeFormat = tf24
     TimeDisplay = tdHMS
     DateMode = dmComboBox
-    Date = 42373
+    Date = 42736
     Time = 0.939742534719699
     UseDefaultSeparators = True
     HideDateTimeParts = []
