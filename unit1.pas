@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, DateTimePicker, Forms, Controls,
-  Graphics, Dialogs, StdCtrls, ExtCtrls, ComCtrls, ActnList, DateUtils;
+  Graphics, Dialogs, StdCtrls, ExtCtrls, ComCtrls, ActnList, Buttons, DateUtils;
 
 type
 
@@ -16,6 +16,9 @@ type
     //d4: TValueRelationship;
     Button1: TButton;
     Button2: TButton;
+    CopyEdit7: TButton;
+    CopyEdit6: TButton;
+    CopiEdit8: TButton;
     datado: TDateTimePicker;
     datakursu: TDateTimePicker;
     dataod: TDateTimePicker;
@@ -61,6 +64,7 @@ type
     Label24: TLabel;
     Label25: TLabel;
     Label26: TLabel;
+    Label27: TLabel;
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
@@ -70,13 +74,13 @@ type
     Label9: TLabel;
     PageControl1: TPageControl;
     Shape1: TShape;
-    Shape2: TShape;
-    Shape3: TShape;
     Shape4: TShape;
-    Shape6: TShape;
     TabSheet1: TTabSheet;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure CopiEdit8Click(Sender: TObject);
+    procedure CopyEdit6Click(Sender: TObject);
+    procedure CopyEdit7Click(Sender: TObject);
     procedure dateClick1(Sender: TObject);
      procedure dateClick2(Sender: TObject);
      procedure dataodclick1(Sender: TObject);
@@ -1743,6 +1747,16 @@ francja 45
   end;
 
 
+
+
+
+
+
+
+
+
+
+
  procedure TForm1.Button2Click(Sender: TObject);
 begin
 
@@ -1761,6 +1775,26 @@ begin
   grudzien:=strtofloat(edit21.text);
   suma:= styczen + luty+marzec+kwiecien+maj+czerwiec+lipiec+sierpien+wrzesien+pazdziernik+listopad+grudzien;
    edit22.text:=FormatFloat('0.00',suma);
+end;
+
+
+
+procedure TForm1.CopyEdit6Click(Sender: TObject);
+begin
+  Edit6.SelectAll;
+  Edit6.CopyToClipboard;
+end;
+
+procedure TForm1.CopyEdit7Click(Sender: TObject);
+begin
+    Edit7.SelectAll;
+    Edit7.CopyToClipboard;
+end;
+
+procedure TForm1.CopiEdit8Click(Sender: TObject);
+begin
+       Edit8.SelectAll;
+       Edit8.CopyToClipboard;
 end;
 
 end.

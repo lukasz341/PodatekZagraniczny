@@ -1,20 +1,32 @@
 object Form1: TForm1
-  Left = 303
-  Height = 642
-  Top = 28
-  Width = 863
+  Cursor = crArrow
+  Left = 354
+  Height = 640
+  Top = 7
+  Width = 865
   Align = alTop
+  AutoSize = True
+  BorderWidth = 10
   Caption = 'Podatek zagraniczny 2017 | autor: Łukasz Kaleta'
-  ClientHeight = 642
-  ClientWidth = 863
+  ClientHeight = 640
+  ClientWidth = 865
+  ParentBiDiMode = False
   LCLVersion = '1.8.0.6'
   object Button1: TButton
-    Left = 187
-    Height = 25
-    Top = 586
-    Width = 75
+    Cursor = crHandPoint
+    Left = 160
+    Height = 33
+    Top = 600
+    Width = 104
     Caption = 'Oblicz'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
     OnClick = Button1Click
+    ParentFont = False
     TabOrder = 0
   end
   object Kraj: TComboBox
@@ -166,7 +178,7 @@ object Form1: TForm1
   object Edit5: TEdit
     Left = 48
     Height = 23
-    Top = 320
+    Top = 344
     Width = 149
     TabOrder = 6
     Text = '0'
@@ -294,7 +306,7 @@ object Form1: TForm1
   object Label10: TLabel
     Left = 52
     Height = 24
-    Top = 400
+    Top = 424
     Width = 208
     AutoSize = False
     Caption = 'Przychody w złotówkach'
@@ -310,7 +322,7 @@ object Form1: TForm1
   object Edit6: TEdit
     Left = 50
     Height = 23
-    Top = 424
+    Top = 448
     Width = 149
     TabOrder = 10
     Text = '0'
@@ -318,7 +330,7 @@ object Form1: TForm1
   object Label11: TLabel
     Left = 52
     Height = 24
-    Top = 456
+    Top = 480
     Width = 346
     AutoSize = False
     Caption = 'Przychód - koszty uzyskania przychodu'
@@ -332,9 +344,9 @@ object Form1: TForm1
     ParentFont = False
   end
   object Edit7: TEdit
-    Left = 52
+    Left = 50
     Height = 23
-    Top = 480
+    Top = 504
     Width = 149
     TabOrder = 11
     Text = '0'
@@ -342,7 +354,7 @@ object Form1: TForm1
   object Label12: TLabel
     Left = 52
     Height = 24
-    Top = 512
+    Top = 536
     Width = 212
     AutoSize = False
     Caption = 'Podatek w złotówkach'
@@ -359,7 +371,7 @@ object Form1: TForm1
   object Edit8: TEdit
     Left = 52
     Height = 23
-    Top = 536
+    Top = 560
     Width = 149
     TabOrder = 12
     Text = '0'
@@ -367,7 +379,7 @@ object Form1: TForm1
   object Label13: TLabel
     Left = 50
     Height = 22
-    Top = 360
+    Top = 384
     Width = 151
     Caption = 'Wyniki obliczeń:'
     Font.CharSet = EASTEUROPE_CHARSET
@@ -438,9 +450,10 @@ object Form1: TForm1
         Text = '0'
       end
       object Button2: TButton
+        Cursor = crHandPoint
         Left = 78
         Height = 25
-        Top = 350
+        Top = 349
         Width = 75
         Caption = 'Suma'
         OnClick = Button2Click
@@ -742,28 +755,56 @@ object Form1: TForm1
     Top = 468
     Width = 272
   end
-  object Shape2: TShape
-    Left = 29
-    Height = 1
-    Top = 7
-    Width = 401
-  end
-  object Shape3: TShape
-    Left = 29
-    Height = 1
-    Top = 625
-    Width = 402
-  end
   object Shape4: TShape
-    Left = 430
-    Height = 619
-    Top = 7
-    Width = 1
+    Left = 432
+    Height = 646
+    Top = 0
+    Width = 2
+    Pen.Width = 5
   end
-  object Shape6: TShape
-    Left = 28
-    Height = 619
-    Top = 7
-    Width = 1
+  object Label27: TLabel
+    Left = 50
+    Height = 16
+    Top = 320
+    Width = 192
+    Caption = '(111,25 lub 139,06 miesięcznie)'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object CopyEdit7: TButton
+    Cursor = crHandPoint
+    Left = 216
+    Height = 24
+    Top = 504
+    Width = 75
+    Caption = 'Kopiuj'
+    OnClick = CopyEdit7Click
+    TabOrder = 15
+  end
+  object CopyEdit6: TButton
+    Cursor = crHandPoint
+    Left = 216
+    Height = 25
+    Top = 448
+    Width = 75
+    Caption = 'Kopiuj'
+    OnClick = CopyEdit6Click
+    TabOrder = 16
+  end
+  object CopiEdit8: TButton
+    Cursor = crHandPoint
+    Left = 216
+    Height = 25
+    Top = 560
+    Width = 75
+    Caption = 'Kopiuj'
+    OnClick = CopiEdit8Click
+    TabOrder = 17
   end
 end
