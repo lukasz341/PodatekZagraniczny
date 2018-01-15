@@ -5,17 +5,18 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, DateTimePicker, Forms, Controls,
-  Graphics, Dialogs, StdCtrls, ExtCtrls, ComCtrls, ActnList, Buttons, DateUtils;
+  Classes, SysUtils, FileUtil, DateTimePicker, Forms, Controls, Graphics,
+  Dialogs, StdCtrls, ExtCtrls, ComCtrls, ActnList, Buttons, EditBtn, DateUtils;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
-    //d4: TValueRelationship;
-    Button1: TButton;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
     Button2: TButton;
+    kosztym: TCalcEdit;
     CopyEdit7: TButton;
     CopyEdit6: TButton;
     CopiEdit8: TButton;
@@ -39,7 +40,6 @@ type
     Edit22: TEdit;
     Edit3: TEdit;
     Edit4: TEdit;
-    Edit5: TEdit;
     Edit6: TEdit;
     Edit7: TEdit;
     Edit8: TEdit;
@@ -126,7 +126,7 @@ begin
  iloscdni:=StrToInt(edit2.text);
  przychodeuro:=StrToFloat(edit3.text);
  podatekeuro:=StrToFloat(edit4.text);
- kosztypln:=StrToFloat(edit5.text);
+ kosztypln:=StrToFloat(kosztym.text);
  przychodpln:=(przychodeuro-(iloscdni*0.3*dieta))*kurseuro;  //przychody w zlotówkach
  edit6.text:=FormatFloat('0.00',przychodpln);
 
@@ -1745,16 +1745,6 @@ francja 45
 }
 
   end;
-
-
-
-
-
-
-
-
-
-
 
 
  procedure TForm1.Button2Click(Sender: TObject);

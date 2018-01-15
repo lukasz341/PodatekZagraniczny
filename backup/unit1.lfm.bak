@@ -1,8 +1,8 @@
 object Form1: TForm1
   Cursor = crArrow
-  Left = 354
+  Left = 457
   Height = 640
-  Top = 7
+  Top = 18
   Width = 865
   Align = alTop
   AutoSize = True
@@ -10,25 +10,9 @@ object Form1: TForm1
   Caption = 'Podatek zagraniczny 2017 | autor: Łukasz Kaleta'
   ClientHeight = 640
   ClientWidth = 865
+  Color = clGradientInactiveCaption
   ParentBiDiMode = False
   LCLVersion = '1.8.0.6'
-  object Button1: TButton
-    Cursor = crHandPoint
-    Left = 160
-    Height = 33
-    Top = 600
-    Width = 104
-    Caption = 'Oblicz'
-    Font.CharSet = EASTEUROPE_CHARSET
-    Font.Height = -19
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    OnClick = Button1Click
-    ParentFont = False
-    TabOrder = 0
-  end
   object Kraj: TComboBox
     Left = 48
     Height = 23
@@ -44,7 +28,7 @@ object Form1: TForm1
       'inne państwo'
     )
     OnChange = dateClick2
-    TabOrder = 1
+    TabOrder = 0
     Text = 'Niemcy'
   end
   object Edit1: TEdit
@@ -52,7 +36,7 @@ object Form1: TForm1
     Height = 23
     Top = 152
     Width = 149
-    TabOrder = 2
+    TabOrder = 1
     Text = '0'
   end
   object Label1: TLabel
@@ -92,7 +76,7 @@ object Form1: TForm1
     Height = 23
     Top = 96
     Width = 149
-    TabOrder = 3
+    TabOrder = 2
     Text = '1'
   end
   object Label3: TLabel
@@ -132,7 +116,7 @@ object Form1: TForm1
     Height = 23
     Top = 208
     Width = 149
-    TabOrder = 4
+    TabOrder = 3
     Text = '0'
   end
   object Label5: TLabel
@@ -156,7 +140,7 @@ object Form1: TForm1
     Height = 23
     Top = 264
     Width = 149
-    TabOrder = 5
+    TabOrder = 4
     Text = '0'
   end
   object Label6: TLabel
@@ -175,14 +159,6 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Edit5: TEdit
-    Left = 48
-    Height = 23
-    Top = 344
-    Width = 149
-    TabOrder = 6
-    Text = '0'
-  end
   object datakursu: TDateTimePicker
     Left = 50
     Height = 23
@@ -191,7 +167,7 @@ object Form1: TForm1
     CenturyFrom = 1941
     MaxDate = 43100
     MinDate = 40544
-    TabOrder = 7
+    TabOrder = 5
     TrailingSeparator = False
     TextForNullDate = 'NULL'
     LeadingZeros = True
@@ -231,7 +207,7 @@ object Form1: TForm1
     CenturyFrom = 1941
     MaxDate = 43100
     MinDate = 38718
-    TabOrder = 8
+    TabOrder = 6
     TrailingSeparator = False
     TextForNullDate = 'NULL'
     LeadingZeros = True
@@ -255,7 +231,7 @@ object Form1: TForm1
     CenturyFrom = 1941
     MaxDate = 43100
     MinDate = 40544
-    TabOrder = 9
+    TabOrder = 7
     TrailingSeparator = False
     TextForNullDate = 'NULL'
     LeadingZeros = True
@@ -306,7 +282,7 @@ object Form1: TForm1
   object Label10: TLabel
     Left = 52
     Height = 24
-    Top = 424
+    Top = 464
     Width = 208
     AutoSize = False
     Caption = 'Przychody w złotówkach'
@@ -322,15 +298,15 @@ object Form1: TForm1
   object Edit6: TEdit
     Left = 50
     Height = 23
-    Top = 448
+    Top = 488
     Width = 149
-    TabOrder = 10
+    TabOrder = 8
     Text = '0'
   end
   object Label11: TLabel
     Left = 52
     Height = 24
-    Top = 480
+    Top = 520
     Width = 346
     AutoSize = False
     Caption = 'Przychód - koszty uzyskania przychodu'
@@ -346,15 +322,15 @@ object Form1: TForm1
   object Edit7: TEdit
     Left = 50
     Height = 23
-    Top = 504
+    Top = 544
     Width = 149
-    TabOrder = 11
+    TabOrder = 9
     Text = '0'
   end
   object Label12: TLabel
     Left = 52
     Height = 24
-    Top = 536
+    Top = 576
     Width = 212
     AutoSize = False
     Caption = 'Podatek w złotówkach'
@@ -371,17 +347,18 @@ object Form1: TForm1
   object Edit8: TEdit
     Left = 52
     Height = 23
-    Top = 560
+    Top = 600
     Width = 149
-    TabOrder = 12
+    TabOrder = 10
     Text = '0'
   end
   object Label13: TLabel
     Left = 50
     Height = 22
-    Top = 384
+    Top = 424
     Width = 151
     Caption = 'Wyniki obliczeń:'
+    Color = clWhite
     Font.CharSet = EASTEUROPE_CHARSET
     Font.Color = clNavy
     Font.Height = -19
@@ -391,19 +368,20 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
+    Transparent = False
   end
   object Edit9: TEdit
     Left = 256
     Height = 23
     Top = 40
     Width = 149
-    TabOrder = 13
+    TabOrder = 11
     Text = '49'
   end
   object Label14: TLabel
     Left = 258
     Height = 24
-    Top = 16
+    Top = 8
     Width = 138
     AutoSize = False
     Caption = 'Dieta'
@@ -430,7 +408,7 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabIndex = 0
-    TabOrder = 14
+    TabOrder = 12
     object TabSheet1: TTabSheet
       Caption = 'Miesiące - suma przychodu'
       ClientHeight = 385
@@ -781,30 +759,71 @@ object Form1: TForm1
     Cursor = crHandPoint
     Left = 216
     Height = 24
-    Top = 504
+    Top = 544
     Width = 75
     Caption = 'Kopiuj'
     OnClick = CopyEdit7Click
-    TabOrder = 15
+    TabOrder = 13
   end
   object CopyEdit6: TButton
     Cursor = crHandPoint
     Left = 216
     Height = 25
-    Top = 448
+    Top = 488
     Width = 75
     Caption = 'Kopiuj'
     OnClick = CopyEdit6Click
-    TabOrder = 16
+    TabOrder = 14
   end
   object CopiEdit8: TButton
     Cursor = crHandPoint
     Left = 216
     Height = 25
-    Top = 560
+    Top = 600
     Width = 75
     Caption = 'Kopiuj'
     OnClick = CopiEdit8Click
+    TabOrder = 15
+  end
+  object kosztym: TCalcEdit
+    Left = 50
+    Height = 23
+    Top = 344
+    Width = 174
+    CalculatorLayout = clNormal
+    AsFloat = 0
+    AsInteger = 0
+    ButtonCursor = crHandPoint
+    ButtonWidth = 23
+    DialogTop = 0
+    DialogLeft = 0
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 16
+    Text = '0'
+  end
+  object BitBtn2: TBitBtn
+    Cursor = crHandPoint
+    Left = 152
+    Height = 34
+    Top = 376
+    Width = 115
+    Caption = 'Oblicz'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = Button1Click
     TabOrder = 17
+  end
+  object BitBtn1: TBitBtn
+    Cursor = crHandPoint
+    Left = 600
+    Height = 35
+    Top = 520
+    Width = 115
+    Caption = 'Zamknij'
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 18
   end
 end
