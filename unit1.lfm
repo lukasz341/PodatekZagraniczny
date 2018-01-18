@@ -355,7 +355,7 @@ object Form1: TForm1
   object Label13: TLabel
     Left = 50
     Height = 22
-    Top = 424
+    Top = 432
     Width = 151
     Caption = 'Wyniki obliczeń:'
     Color = clWhite

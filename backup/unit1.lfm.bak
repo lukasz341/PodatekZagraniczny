@@ -1,8 +1,8 @@
 object Form1: TForm1
   Cursor = crArrow
-  Left = 457
+  Left = 306
   Height = 640
-  Top = 18
+  Top = 13
   Width = 865
   Align = alTop
   AutoSize = True
