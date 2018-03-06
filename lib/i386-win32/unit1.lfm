@@ -1,8 +1,8 @@
 object Form1: TForm1
   Cursor = crArrow
-  Left = 306
+  Left = 753
   Height = 640
-  Top = 13
+  Top = 65
   Width = 865
   Align = alTop
   AutoSize = True
@@ -25,6 +25,7 @@ object Form1: TForm1
       'Belgia'
       'Holandia'
       'Francja'
+      'Irlandia'
       'inne państwo'
     )
     OnChange = dateClick2

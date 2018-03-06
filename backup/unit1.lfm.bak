@@ -1,8 +1,8 @@
 object Form1: TForm1
   Cursor = crArrow
-  Left = 306
+  Left = 580
   Height = 640
-  Top = 13
+  Top = 28
   Width = 865
   Align = alTop
   AutoSize = True
@@ -25,6 +25,7 @@ object Form1: TForm1
       'Belgia'
       'Holandia'
       'Francja'
+      'Irlandia'
       'inne państwo'
     )
     OnChange = dateClick2
@@ -355,7 +356,7 @@ object Form1: TForm1
   object Label13: TLabel
     Left = 50
     Height = 22
-    Top = 424
+    Top = 432
     Width = 151
     Caption = 'Wyniki obliczeń:'
     Color = clWhite

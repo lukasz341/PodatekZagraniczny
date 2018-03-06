@@ -137,7 +137,7 @@ begin
  edit8.text:=FormatFloat('0.00',podatekpln);
 
 
- if (kraj.text='Niemcy') or (kraj.text='Francja') then showmessage ('Kwotę: '+edit7.text+' należy wpisać w kolumnie B w załączniku PIT/ZG');
+ if (kraj.text='Niemcy') or (kraj.text='Francja') or (kraj.text='Irlandia')then showmessage ('Kwotę: '+edit7.text+' należy wpisać w kolumnie B w załączniku PIT/ZG');
  if (kraj.text='Belgia') or (kraj.text='Holandia') then showmessage ('Kwotę: '+edit7.text+' należy wpisać w kolumnie C, a kwotę: '+edit8.text+ ' w kolumnie D w załączniku PIT/ZG');
 
 
@@ -1694,6 +1694,7 @@ if datakursu1='20121231' then edit1.text:='4,0882' else
  if kraj.text='Belgia'   then edit9.text:='48' else
  if kraj.text='Holandia' then edit9.text:='50' else
  if kraj.text='Francja' then edit9.text:='50' else
+ if kraj.text='Irlandia' then edit9.text:='52' else
  if kraj.text='inne państwo' then
    begin
  edit9.text:='0';
