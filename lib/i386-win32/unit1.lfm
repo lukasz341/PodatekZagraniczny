@@ -1,15 +1,15 @@
 object Form1: TForm1
   Cursor = crArrow
-  Left = 753
-  Height = 640
-  Top = 65
-  Width = 865
+  Left = 465
+  Height = 639
+  Top = 45
+  Width = 867
   Align = alTop
   AutoSize = True
   BorderWidth = 10
   Caption = 'Podatek zagraniczny 2017 | autor: Łukasz Kaleta'
-  ClientHeight = 640
-  ClientWidth = 865
+  ClientHeight = 639
+  ClientWidth = 867
   Color = clGradientInactiveCaption
   ParentBiDiMode = False
   LCLVersion = '1.8.0.6'
@@ -161,12 +161,12 @@ object Form1: TForm1
     ParentFont = False
   end
   object datakursu: TDateTimePicker
-    Left = 50
+    Left = 48
     Height = 23
     Top = 152
     Width = 83
     CenturyFrom = 1941
-    MaxDate = 43100
+    MaxDate = 43496
     MinDate = 40544
     TabOrder = 5
     TrailingSeparator = False
@@ -176,7 +176,7 @@ object Form1: TForm1
     TimeFormat = tf24
     TimeDisplay = tdHMS
     DateMode = dmComboBox
-    Date = 42736
+    Date = 43101
     Time = 0.939742534719699
     UseDefaultSeparators = True
     HideDateTimeParts = []
@@ -206,7 +206,7 @@ object Form1: TForm1
     Top = 96
     Width = 83
     CenturyFrom = 1941
-    MaxDate = 43100
+    MaxDate = 43830
     MinDate = 38718
     TabOrder = 6
     TrailingSeparator = False
@@ -216,7 +216,7 @@ object Form1: TForm1
     TimeFormat = tf24
     TimeDisplay = tdHMS
     DateMode = dmComboBox
-    Date = 42736
+    Date = 43101
     Time = 0.939742534719699
     UseDefaultSeparators = True
     HideDateTimeParts = []
@@ -225,12 +225,12 @@ object Form1: TForm1
     OnClick = dataodclick1
   end
   object datado: TDateTimePicker
-    Left = 150
+    Left = 149
     Height = 23
     Top = 96
     Width = 83
     CenturyFrom = 1941
-    MaxDate = 43100
+    MaxDate = 43830
     MinDate = 40544
     TabOrder = 7
     TrailingSeparator = False
@@ -240,7 +240,7 @@ object Form1: TForm1
     TimeFormat = tf24
     TimeDisplay = tdHMS
     DateMode = dmComboBox
-    Date = 42736
+    Date = 43101
     Time = 0.939742534719699
     UseDefaultSeparators = True
     HideDateTimeParts = []
