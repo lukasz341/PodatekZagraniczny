@@ -137,8 +137,8 @@ begin
  edit8.text:=FormatFloat('0.00',podatekpln);
 
 
- if (kraj.text='Niemcy') or (kraj.text='Francja') or (kraj.text='Irlandia')then showmessage ('Kwotę: '+edit7.text+' należy wpisać w kolumnie B w załączniku PIT/ZG');
- if (kraj.text='Belgia') or (kraj.text='Holandia') then showmessage ('Kwotę: '+edit7.text+' należy wpisać w kolumnie C, a kwotę: '+edit8.text+ ' w kolumnie D w załączniku PIT/ZG');
+ if (kraj.text='Niemcy') or (kraj.text='Francja') or (kraj.text='Irlandia')then showmessage ('Kwotę: '+edit7.text+' należy wpisać w kolumnie C w załączniku PIT/ZG');
+ if (kraj.text='Belgia') or (kraj.text='Holandia') then showmessage ('Kwotę: '+edit7.text+' należy wpisać w kolumnie D, a kwotę: '+edit8.text+ ' w kolumnie E w załączniku PIT/ZG');
 
 
 end;

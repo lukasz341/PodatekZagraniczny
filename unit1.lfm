@@ -7,7 +7,7 @@ object Form1: TForm1
   Align = alTop
   AutoSize = True
   BorderWidth = 10
-  Caption = 'Podatek zagraniczny 2017 | autor: Łukasz Kaleta'
+  Caption = 'Podatek zagraniczny 2018 | autor: Łukasz Kaleta'
   ClientHeight = 639
   ClientWidth = 867
   Color = clGradientInactiveCaption
